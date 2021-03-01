@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interior Design of House</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+</head>
+<body>
+    <h1>Creating The Interior of Your House</h1>
+    <br/><br/>
+
+    <h3>Here are some popular groupings</h3>
+    <br/>
+    <table style="width:100%">
+        <tr>
+            <th>Ceiling</th>
+            <th>Flooring</th>
+            <th>Wall Colour</th>
+        </tr>
+        <tr>
+            <td>Drop Down</td>
+            <td>Carpet</td>
+            <td>Grey</td>
+        </tr>
+        <tr>
+            <td>Conventional</td>
+            <td>Tile</td>
+            <td>Black</td>
+        </tr>
+        <tr>
+            <td>Coffered</td>
+            <td>Hardwood</td>
+            <td>White</td>
+        </tr>
+    </table>
+
+    <br/><br/><br/>
+    <h3>Select What You Want</h3>
+
+    <form method="get">
+        <!--
+            These labels and radio button are for the customer to choose what type of ceiling they want 
+            to have in their house.
+        -->
+        <p> Please Select A Type of Ceiling: </p>
+        <label> <input type="radio" name="ceiling" value="paypal" /> Conventional </label>
+        <label> <input type="radio" name="ceiling" value="debit"/> Drop Down </label>
+        <label> <input type="radio" name="ceiling" value="credit"/> Coffered </label>
+        <br /><br />
+        
+        <!--
+            This label and dropdown menu are for the customer to choose what type of flooring they want
+            to have in their house.
+        -->
+        <p><label for="flooring">Please Select A Type of Flooring:</label> </p>
+        <select name="flooring" id="flooring">
+            <option value="hardwood">Hardwood</option> 
+            <option value="tile">Tile</option>
+            <option value="carpet">Carpet</option>
+        </select>
+        <br/><br/>
+        
+        <!--
+            This label and colour options are for the customer to choose what colour they want their walls
+            to be in their house.
+        -->
+        <label for="wall">Select A Colour For Your Wall:</label>
+        <input type="color" id="colour" name="colour" value="#ff0000">
+        <br/><br/>
+
+        <!--
+            This allows customers to submit their inputs.
+        -->
+        <input type="submit" value="Submit">
+        <br/><br/><br/>
+
+        <a href="index.html">Back to Home</a>
+        <a href="ceilings.html">View Ceilings</a>
+        <a href="floors.html">View Floorings</a>
+        <a href="wallColours.html">Decide On Your Wall Colour</a>
+
+    </form>
+</body>
+</html>
